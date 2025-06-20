@@ -31,3 +31,8 @@ jobs:
             - name: "List Directories"
               run: ls
 
+            - name: "Upload product-ready build files"
+              uses: actions/upload-artifact@v4
+              with:
+                name: build
+                path: /dist
